@@ -1,0 +1,95 @@
+@mixin navbar {
+    background: $gradient;
+    .navbar-brand {
+        color: $white;
+    }
+    .active{
+        color: $white !important;
+    }
+    a {
+        color: $red;
+        &:hover {
+            color: $white;
+        }
+        &:focus {
+            color: $white;
+        }
+    }
+    .custom-toggler {
+        border-color: $gray-600;
+        &:focus {
+            color: $red;
+        }
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220, 53, 69, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    }
+}
+
+@mixin carousel {
+    i {
+        color: $red;
+    }
+    p{
+        margin-bottom: $margin30;
+        line-height: 40px;
+    }
+    img {
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-bottom: $margin30;
+    }
+}
+@mixin btn {
+    background-color: $indigo;
+    color: white;
+    &:hover {
+        color: $indigo;
+        border: 1px solid $indigo;
+    }
+}
+
+@mixin banner {
+    background-image: url(../img/pexels-aleksandar-pasaric-325185.jpg);
+    background-position-x:10%;
+    background-position-y: 40%;
+    padding: 30px 20px 250px 20px;
+    h1 {
+        margin-top: $margin30;
+    }
+    p {
+        margin-top: $margin20;
+        margin-bottom: $margin30;
+    }
+}
+
+@mixin partnership {
+    img {
+        width: 150px;
+        margin-bottom: $margin20;
+    }
+}
+
+@mixin footer {
+    padding-top: 20px;
+    background: $gradient;
+    color: $white;
+    .row {
+        padding: 20px;
+        
+        .col-lg-3 {
+            margin-bottom: $margin30;
+            h5 {
+                margin-bottom: $margin20;
+            }
+            p {
+                padding-bottom: 10px;
+            }
+        }
+        }
+        p {
+            margin: 0px;
+            padding-bottom: $margin20;
+        }
+}
